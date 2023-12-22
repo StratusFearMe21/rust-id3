@@ -58,7 +58,7 @@ impl fmt::Display for Version {
 #[derive(Clone, Debug, Default, Eq)]
 pub struct Tag {
     /// A vector of frames included in the tag.
-    frames: Vec<Frame>,
+    pub frames: Vec<Frame>,
     /// ID3 Tag version
     version: Version,
 }
