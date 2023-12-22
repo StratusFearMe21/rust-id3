@@ -32,7 +32,7 @@ enum ID {
 #[derive(Clone, Debug, Eq, Ord, PartialOrd, Hash)]
 pub struct Frame {
     id: ID,
-    content: Content,
+    pub content: Content,
     tag_alter_preservation: bool,
     file_alter_preservation: bool,
     encoding: Option<Encoding>,
